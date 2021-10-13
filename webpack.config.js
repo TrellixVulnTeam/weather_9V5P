@@ -12,7 +12,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'main.html',
+            filename: 'index.html',
             template: './src/html/main.html',
             templateParameters: {
                 titulo: 'weather'

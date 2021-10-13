@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&display=swap');
+
+@mixin fontTitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+@mixin fontText {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+$primaryColor: rgba(242, 190, 62, 0.5);
+$secondaryColor: rgba(241, 235, 117, 0.5);
