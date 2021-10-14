@@ -1,0 +1,64 @@
+main 
+{
+    height: 467px;
+    form
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 3fr;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        .form--textCity
+        {
+            @include formStyle;
+            background-color: $primaryColor;
+        }
+
+        .form--textCity:focus-visible
+        {
+            outline: none;
+        }
+
+        .form--country
+        {
+            @include formStyle;
+            background-color: $secondaryColor;
+            cursor: pointer;
+        }
+
+        .form--submit{
+            align-self: flex-start;
+            justify-self: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 150px;
+            min-width: 150px;
+            margin: 10px 10px 0px 10px;
+            background-color: $ternaryColor;
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            position: relative;
+
+            img
+            {
+                width: 45px;
+                height: 45px;
+            }
+
+            p
+            {
+                @include fontText;
+                font-size: 2rem;
+            }
+        }
+
+        .form--submit:hover
+        {
+            bottom: 3px;
+            left: 3px;
+            box-shadow: -3px 6px 0px 3px rgba(242, 190, 62, 0.5);
+        }
+    }
+}

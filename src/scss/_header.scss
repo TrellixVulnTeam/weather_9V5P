@@ -2,6 +2,7 @@ header
 {
     position: relative;
     height: 200px;
+    padding: 5px;
 
     img.header--figure
     {
@@ -19,6 +20,11 @@ header
         right: 10px;
         top: 76px;
     }
+
+    // .header--figure_transition
+    // {
+    //     transition: ;
+    // }
 }
 
 @media only screen and (min-width: 600px) {
@@ -49,9 +55,15 @@ header
     {
         place-items: center;
 
+        figure
+        {
+            justify-self: end;
+        }
+
         h1.header--title
         {
             position: static;
+            font-size: 3.5rem;
         }
     }
 } 
